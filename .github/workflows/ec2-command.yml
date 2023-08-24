@@ -20,4 +20,4 @@ jobs:
 
       - name: Run Command on EC2
         run: |
-          ssh -o StrictHostKeyChecking=no ec2-user@54.211.32.220 "echo 'Hello PearlThoughts' > output.txt 2>&1"
+          ssh -o StrictHostKeyChecking=no ec2-user@54.211.32.220 "echo 'Hello World....PearlThoughts' > output.txt 2>&1"
