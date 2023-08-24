@@ -1,10 +1,9 @@
 name: Run Command on EC2
 
 on:
-  # push:
-  #   branches:
-  #     - main
-  workflow_dispatch:
+  push:
+    branches:
+      - main
 
 jobs:
   run-command:
@@ -21,4 +20,4 @@ jobs:
 
       - name: Run Command on EC2
         run: |
-          ssh -o StrictHostKeyChecking=no ec2-user@54.211.32.220 "echo 'Hello World'"
+          ssh -o StrictHostKeyChecking=no ec2-user@54.211.32.220 "echo 'Hello PearlThoughts'"
