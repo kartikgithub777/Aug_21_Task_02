@@ -21,4 +21,4 @@ jobs:
 
       - name: Run Command on EC2
         run: |
-          ssh -o StrictHostKeyChecking=no ec2-user@${{ secrets.EC2_INSTANCE_IP }} 'Hello World'
+          ssh -o StrictHostKeyChecking=no ec2-user@54.211.32.220 'Hello World'
